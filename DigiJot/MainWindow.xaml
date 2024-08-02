@@ -16,7 +16,7 @@
         <TextBlock HorizontalAlignment="Center" Height="41" Margin="0,10,0,0" TextWrapping="Wrap" Text="DIGIJOT" VerticalAlignment="Top" Width="98" FontSize="20" FontFamily="Cascadia Mono SemiBold"/>
         <TextBlock HorizontalAlignment="Left" Height="19" Margin="75,51,0,0" TextWrapping="Wrap" Text="JOT TITLE:" VerticalAlignment="Top" Width="665" FontSize="16" FontFamily="Cascadia Mono"/>
         <TextBox x:Name="jotTitle" HorizontalAlignment="Left" Height="25" Margin="75,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="535" Background="{x:Null}" BorderBrush="Black" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" FontSize="20" FontFamily="Cascadia Mono SemiLight"/>
-        <Button Content="Add Jot"  HorizontalAlignment="Left" Height="20" Margin="548,112,0,0" VerticalAlignment="Top" Width="62" FontFamily="Cascadia Code SemiBold" Background="White" Click="Add_BTN"/>
+        <Button Content="Add Jot"  HorizontalAlignment="Left" Height="20" Margin="548,112,0,0" VerticalAlignment="Top" Width="62" FontFamily="Cascadia Code" Background="White" Click="Add_BTN"/>
         <ListBox x:Name="jotBox" HorizontalAlignment="Left" Height="410" Margin="75,157,0,0" VerticalAlignment="Top" Width="535" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="Black">
             <ListBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.3"/>
@@ -25,11 +25,10 @@
                 <Style TargetType="ListBoxItem">
                     <Setter Property="Padding" Value="10"/>
                     <Setter Property="Margin" Value="5"/>
-                    <Setter Property="Background" Value="#F0F0F0"/>
+                    <Setter Property="Background" Value="#FFF"/>
                 </Style>
             </ListBox.ItemContainerStyle>
         </ListBox>
-        <Button Content="DELETE JOT" HorizontalAlignment="Left" Height="28" Margin="528,582,0,0" VerticalAlignment="Top" Width="82" FontFamily="Cascadia Code SemiBold" Background="White" Click="DEL_BTN"/>
-
+        <Button Content="DELETE JOT" HorizontalAlignment="Left" Height="28" Margin="528,582,0,0" VerticalAlignment="Top" Width="82" FontFamily="Cascadia Code" Background="White" Click="DEL_BTN"/>
     </Grid>
 </Window>
