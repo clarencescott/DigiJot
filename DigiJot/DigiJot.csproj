@@ -6,6 +6,23 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <PackageIcon>T.png</PackageIcon>
+    <RepositoryUrl>https://github.com/clarencescott/DigiJot</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="T.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\T.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="T.png" />
+  </ItemGroup>
 
 </Project>

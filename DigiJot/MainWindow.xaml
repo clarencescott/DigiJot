@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DigiJot"
         mc:Ignorable="d"
-        Title="DIJIJOT" Height="700" Width="750">
+        Title="DigiJot" Height="700" Width="750" Icon="/T.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.9,0" StartPoint="0.2,0">
