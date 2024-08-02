@@ -1,0 +1,35 @@
+﻿<Window x:Class="DigiJot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DigiJot"
+        mc:Ignorable="d"
+        Title="DIJIJOT" Height="700" Width="750">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.9,0" StartPoint="0.2,0">
+                <GradientStop Color="#FF9FB9FF" Offset="1"/>
+                <GradientStop Color="#FFCDFFD8" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Center" Height="41" Margin="0,10,0,0" TextWrapping="Wrap" Text="DIGIJOT" VerticalAlignment="Top" Width="98" FontSize="20" FontFamily="Cascadia Mono SemiBold"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="75,51,0,0" TextWrapping="Wrap" Text="JOT TITLE:" VerticalAlignment="Top" Width="665" FontSize="16" FontFamily="Cascadia Mono"/>
+        <TextBox x:Name="jotTitle" HorizontalAlignment="Left" Height="25" Margin="75,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="535" Background="{x:Null}" BorderBrush="Black" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" FontSize="20" FontFamily="Cascadia Mono SemiLight"/>
+        <Button Content="Add Jot"  HorizontalAlignment="Left" Height="20" Margin="548,112,0,0" VerticalAlignment="Top" Width="62" FontFamily="Cascadia Code SemiBold" Background="White" Click="Add_BTN"/>
+        <ListBox x:Name="jotBox" HorizontalAlignment="Left" Height="410" Margin="75,157,0,0" VerticalAlignment="Top" Width="535" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="Black">
+            <ListBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.3"/>
+            </ListBox.Background>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Padding" Value="10"/>
+                    <Setter Property="Margin" Value="5"/>
+                    <Setter Property="Background" Value="#F0F0F0"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+        <Button Content="DELETE JOT" HorizontalAlignment="Left" Height="28" Margin="528,582,0,0" VerticalAlignment="Top" Width="82" FontFamily="Cascadia Code SemiBold" Background="White" Click="DEL_BTN"/>
+
+    </Grid>
+</Window>
